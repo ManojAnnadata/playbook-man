@@ -1,0 +1,12 @@
+#creating directory in node 1
+
+---
+- name: update node 1
+  hosts: n1
+
+  tasks:
+  - name: create n1 directory
+    file:
+      name: /home/centos/f2-dir
+      state: directory
+
